@@ -16,11 +16,10 @@ The end result is a dataset that is exported as a file named tidydataset.txt, wh
 
 # Repository Contents
 
-The repository includes the zip file containing the original dataset, the R script that reads the original dataset and outputs the desired dataset, this Readme file and the codebook describing the variables
+The repository includes the R script that reads the original dataset and outputs the desired dataset, this Readme file and the codebook describing the variables
 
 |File Name|Description|
 |---------|-----------|
-|data\getdata_projectfiles_UCI HAR Dataset.zip|Original data which represents data collected from the accelerometers from the Samsung Galaxy S smartphone, including its Readme file describing each file|
 |run_analysis.R|R script that reads the original data set and outputs the desired data set|
 |README.md|Documentation explaining the project and the files in the repository|
 |CodeBook.md|Describes the variables and the summary choices made|
@@ -29,7 +28,7 @@ The repository includes the zip file containing the original dataset, the R scri
 
 ## 1. Load relevant files from the original dataset
 
-The zipped folder has multiple files. As the original dataset has its own readme file, we won't explain them in too much detail here; please refer to it for additional detail. The files with relevant data to be loaded in our project are:
+The zipped folder, if not present in the data folder, will be downloaded. It has multiple files; as the original dataset has its own readme file, we won't explain them in too much detail here; please refer to it for additional detail. The files with relevant data to be loaded in our project are:
 
 * X_test.txt and X_train.txt: the pre-processed data for the test and train sets, respectively, containing 561 features (columns)
 * y_test.txt and y_train.txt: the activity label (number between 1 and 6) for each observation (row) of the  test and train sets, respectively
